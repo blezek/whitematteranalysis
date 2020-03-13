@@ -250,7 +250,7 @@ for c in range(number_of_clusters):
     #pd_c = wma.filter.mask(output_polydata_s, mask, preserve_point_data=True, preserve_cell_data=True,verbose=False)
     pd_c = pd_c_list[c]
     # The clusters are stored starting with 1, not 0, for user friendliness.
-    fname_c = 'cluster_{0:05d}.vtp'.format(c+1)
+    fname_c = 'cluster_{0:05d}.vtk'.format(c+1)
     # save the filename for writing into the MRML file
     fnames.append(fname_c)
     # prepend the output directory

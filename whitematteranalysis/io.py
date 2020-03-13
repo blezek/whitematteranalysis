@@ -653,6 +653,8 @@ class LateralityResults:
         print "b"
         # output polydata
         writer = vtk.vtkPolyDataWriter()
+        writer.SetDataModeToBinary()
+
         if (vtk.vtkVersion().GetVTKMajorVersion() >= 6.0):
             writer.SetInputData(self.polydata)
         else:
