@@ -52,7 +52,7 @@ for c_idx in cluster_list:
         print "<wm_append_cluster> Error: input cluster index", c_idx, "should be smaller than 99999."
         exit()
 
-    cluster_vtp_filename = 'cluster_' + str(c_idx).zfill(5) + '.vtp'
+    cluster_vtp_filename = 'cluster_' + str(c_idx).zfill(5) + '.vtk'
     if not os.path.exists(os.path.join(inputdir, cluster_vtp_filename)):
         print "<wm_append_cluster> Error:", cluster_vtp_filename, "does not exist."
         exit()
